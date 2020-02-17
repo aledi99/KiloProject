@@ -1,0 +1,37 @@
+<div fxFlexLayout="column">
+    <h1 mat-dialog-title>Nueva Caja</h1>
+    <div mat-dialog-content>
+      <mat-form-field>
+        <input type="number" matInput [(ngModel)]="cajaDto.numero" placeholder="Número de caja">
+      </mat-form-field>
+
+    <mat-form-field>
+  <mat-label>Tipo de Producto</mat-label>
+    <mat-select [(ngModel)]="cajaDto.idProducto">
+    <mat-option *ngFor="let producto of listadoProductos" [value]="producto.id">
+      {{producto.data.nombre}}
+    </mat-option>
+    </mat-select>
+    </mat-form-field>
+
+
+    <mat-form-field>
+    <input type="number" matInput [(ngModel)]="cajaDto.cantidadTotal" placeholder="Cantidad">
+    </mat-form-field>
+
+     <mat-form-field>
+  <mat-label>Entidad Asociada</mat-label>
+    <mat-select [(ngModel)]="cajaDto.idEntidad" placeholder="Entidad Asociada">
+    <mat-option *ngFor="let entidad of listadoEntidades" [value]="entidad.id">
+      {{entidad.data.nombre}}
+    </mat-option>
+    </mat-select>
+    </mat-form-field>
+    
+    
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button (click)="cerrar()">Cancelar</button>
+      <button mat-button (click)="guardarCaja()" cdkFocusInitial>Guardar</button>
+    </div>
+    </div>

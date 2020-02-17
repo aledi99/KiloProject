@@ -1,0 +1,42 @@
+.opciones {
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.opciones button {
+    width: 100%;
+}
+
+mat-card-title {
+    text-align: center;
+}
+
+.acciones {
+    margin-left: 5%;
+}
+
+table {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 3%;
+    font-weight: 800;
+}
+
+th {
+    background-color: rgb(148, 28, 68);
+    color: white;
+}
+
+tr:nth-child(2n + 1) {
+    background-color: rgb(250, 217, 225);
+}
+
+tr:nth-child(2n + 2) {
+    background-color: rgb(175, 143, 143);
+}

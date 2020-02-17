@@ -1,0 +1,4 @@
+<div class="envolturaGrafica" *ngIf="graficaBarraKilosPorEntidadReady">
+    <canvas class="grafica" baseChart [data]="valoresGraficaBarraKilosPorEntidad" [labels]="etiquetasGraficaBarraKilosPorEntidad" [chartType]="tipoGraficaBarra" [options]="opcionesGraficaResponsiva" [plugins]="pluginsGraficaVoid" [legend]="leyendaGraficaTrue">
+    </canvas>
+</div>

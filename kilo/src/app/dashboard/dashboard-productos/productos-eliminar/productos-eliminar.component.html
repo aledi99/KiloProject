@@ -1,0 +1,15 @@
+<div fxFlexLayout="column">
+    <h1 mat-dialog-title>Eliminar cantidad</h1>
+    <div mat-dialog-content>
+      <mat-form-field>
+        <input matInput [(ngModel)]="cantidad" placeholder="Cantidad">
+      </mat-form-field>
+
+    
+    
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button (click)="cerrar()">Cancelar</button>
+      <button mat-button (click)="eliminarCantidad()" cdkFocusInitial>Guardar</button>
+    </div>
+    </div>

@@ -1,0 +1,15 @@
+<div fxFlexLayout="column">
+    <h1 mat-dialog-title>Añadir cantidad</h1>
+    <div mat-dialog-content>
+      <mat-form-field>
+        <input type="number" matInput [(ngModel)]="cantidad" placeholder="Cantidad">
+      </mat-form-field>
+
+    
+    
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button (click)="cerrar()">Cancelar</button>
+      <button mat-button (click)="anyadirCantidad()" cdkFocusInitial>Guardar</button>
+    </div>
+    </div>
